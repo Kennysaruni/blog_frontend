@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container{
+    width: 100vw;
+    height: 65px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0px;
+    /* z-index: 1000; */
+    color: black;
+    border-bottom: 1px solid #F5EDE5;
+    font-family:  "Poltawski Nowy", serif;
+    display: flex;
+    /* background-color: black; */
+}
+
+.nav-title{
+    color: black;
+    line-height: 23px;
+    font-family:  "Poltawski Nowy", serif;
+    padding: 10px;
+}
+
+.blog-search{
+    background-color: #F5EDE5;
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+    color: #9E6B47;
+    border: none;
+    margin-left: 20px;
+    padding: 10px;
+
+}
+
+.nav-items {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-items > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    gap: 20px;
+    font-size: 13px;
+  }
+  
+  .nav-items > ul li {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-items > ul li:hover {
+    transform: scale(1.2);
+  }
+
+@media(max-width:768px){
+    .blog-search{
+        display: none;
+    }
+    .nav-items{
+        display: none;
+    }
+}
+  

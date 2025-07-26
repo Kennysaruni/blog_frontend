@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+    display: block;
+    align-items: center;
+    position: relative;
+    top: 75px;
+}
+
+input{
+    background-color: #F5EDE5;
+}
+
+form{
+    background-color: #F5EDE5;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.form-container{ 
+    margin: 0 auto;
+    width: 960px;
+    height: auto;
+    background-color: #F5EDE5;
+    color: #9E6B47;
+    border-radius: 8px;
+    display: block;
+    padding: 20px;
+    align-content: space-evenly;
+}
+.create-blog-title{
+    background-color: #F5EDE5;
+    padding: 20px;
+    font-weight: bold;
+    font-family:  "Poltawski Nowy", serif;
+}
+.blog-title{
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F5EDE5;
+    border: 1px solid #9E6B47;
+    margin: 0 auto;
+    font-family:  "Poltawski Nowy", serif;
+    color: black;
+}
+
+
+.blog-title:active{
+    outline: none;
+    border: none;
+
+}
+.blog-text{
+    width: 80%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F5EDE5;
+    border: 1px solid #9E6B47;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    font-family:  "Poltawski Nowy", serif;
+    color: black;
+}
+
+
+.btn-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #F5EDE5;
+  padding: 10px 0;
+}
+
+.submit-button {
+  background-color: #9E6B47;
+  border-radius: 50%; 
+  width: 50px;
+  height: 50px;
+  border: none;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px; 
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.submit-button svg {
+  font-size: 1.2rem; /* Slightly larger for visibility */
+  color: #FCFAF7;
+  background-color: transparent;
+}
+
+.submit-button svg :hover{
+    background-color: #1C120D;
+}
+
+.submit-button:hover {
+  transform: scale(1.2);
+  background-color: #1C120D; /* Darker on hover */
+  color: #F5EDE5;
+}
+
+.submit-button:active {
+  transform: scale(1); /* Reset scale on click */
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100vw;
+        position: relative;
+        top: -100px;
+        left: 0px;
+    }
+    .form-container{
+        width: 375px;
+    }
+}
